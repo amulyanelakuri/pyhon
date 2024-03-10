@@ -43,5 +43,54 @@ my_tuple = (10, 'World', 2.718, (7, 8, 9))
 print(my_tuple[0])      # Output: 10
 print(my_tuple[1])      # Output: World
 print(my_tuple[3][2])   # Output: 9
-# print Tuple data types
+# print range()
+# Using range() to create a sequence of numbers
+for num in range(5):     # Generates numbers from 0 to 4
+    print(num, end=' ')   
+print()  # Prints a new line
+# Using range() with start and stop values
+for num in range(2, 8):  # Generates numbers from 2 to 7
+    print(num, end=' ')   
+print()  # Prints a new line
+# Using range() with start, stop, and step values
+for num in range(1, 10, 2):  # Generates odd numbers from 1 to 9
+    print(num, end=' ')      
+
+# Dictionaries
+# Creating a dictionary
+person = {
+    "first_name": "John",
+    "last_name": "Doe",
+    "age": 30,
+    "city": "New York"
+}
+
+# Accessing values using keys
+print("First Name:", person["first_name"])  
+print("Age:", person["age"])                
+
+# Modifying values
+person["age"] = 31
+print("Updated Age:", person["age"])       
+
+# Adding new key-value pairs
+person["occupation"] = "Engineer"
+
+# # Deleting a key-value pair
+del person["city"]
+
+# Checking if a key exists
+if "occupation" in person:
+    print("Occupation:", person["occupation"])  
+
+# Iterating through keys and values
+for key, value in person.items():
+    print(key + ":", value)
+
+# Clearing the dictionary
+person.clear()
+
+
+
+
 
