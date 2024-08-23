@@ -1,0 +1,104 @@
+12.2.3. Operator Precedence
+Write a program to understand The operators precedence. Calculate the following expressions and print the result.
+ Calculate a + b * 5
+ Calculate a + b * 6 / 2
+Sample Input and Output:
+a: 20
+b: 10
+20 + 10 * 5 = 70
+20 + 10 * 6 / 2 = 50.0
+
+
+a=int(input("a: "))
+b=int(input("b: "))
+print(a,"+",b,"* 5","=",a+b*5)
+print(a,"+",b,"* 6 / 2","=",a+b*6/2)
+
+
+12.2.4. Writing an example on operator precedence
+
+Write a simple program that demonstrates operator precedence. Take two integers a and b as input from the console using input() function.
+
+Calculate the following expressions:
+a + b * 5
+a + b * 5 * 10 / 2
+Print to the console, the result of the two input integers after performing these operations as shown in the example.
+
+Sample Input and Output:
+a: 32
+b: 41
+32 + 41 * 5 = 237
+32 + 41 * 5 * 10 / 2 = 1057.0
+
+
+a=int(input("a: "))
+b=int(input("b: "))
+c=a+b*5
+d=a+b*5*10/2
+print(a,"+",b,"* 5","=",c)
+print(a,"+",b,"* 5 * 10 / 2","=",d)
+
+
+12.2.5. Using operator precedence on Logical operators
+02:36
+
+
+
+
+
+Write a simple program that takes three input parameters a, b and c from the user and perform the following operations a and b or c , a or b and c then print the result.
+
+Logical and is always calculated before Logical or.
+
+Sample Input and Output:
+a: 2
+b: 0
+c: 3
+a and b or c 3
+a or b and c 2
+
+
+# Take input for variable a
+a=int(input("a: "))
+
+# Take input for variable b
+b=int(input("b: "))
+
+# Take input for variable c
+c=int(input("c: "))
+
+# calculate a and b or c and print the result
+print('a and b or c',a and b or c)
+
+# calculate a or b and c and print the resul
+
+
+12.2.6. Using Operator Precedence on Logical Operators
+02:53
+
+
+
+
+
+Take three integers a, b and c as input from the console using input() function.
+
+Calculate the following expressions:
+a and b and c or a
+a or b and c and a
+For each expression, print to the console, the result of the three input integers as shown in the example.
+
+Sample Input and Output:
+a: 30
+b: 2
+c: 5
+30 and 2 and 5 or 30 is 5
+30 or 2 and 5 and 30 is 30
+
+
+a=int(input("a: "))
+b=int(input("b: "))
+c=int(input("c: "))
+print(a,"and",b,"and",c,"or",a,"is",a and b and c or a)
+print(a,"or",b,"and",c,"and",a,"is",a or b and c and a)
+
+print('a or b and c',a or b and c)
